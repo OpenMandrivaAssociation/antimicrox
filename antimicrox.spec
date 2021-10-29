@@ -49,8 +49,8 @@ This application is continuation of project called AntiMicro, which was later ab
 %autosetup -p1
 
 %build
-  
-%cmake
+%cmake  \
+        -DAPPDATA=ON
 
 %make_build
 
