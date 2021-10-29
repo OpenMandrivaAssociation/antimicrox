@@ -49,7 +49,8 @@ This application is continuation of project called AntiMicro, which was later ab
 %build
   
 %cmake
-%cmake_build
+
+%make_build
 
 %install
 %make_install -C build
