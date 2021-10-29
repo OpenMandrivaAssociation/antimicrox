@@ -12,6 +12,7 @@ Group:          Hardware/Joystick
 URL:            https://github.com/AntiMicroX/antimicroX
 Source0:        https://github.com/AntiMicroX/antimicrox/archive/refs/tags/%{version}/%{name}-%{version}.tar.gz
 
+BuildRequires: appstream-util
 BuildRequires: cmake
 BuildRequires: cmake(ECM)
 BuildRequires: cmake(Qt5Concurrent)
@@ -21,6 +22,7 @@ BuildRequires: cmake(Qt5LinguistTools)
 BuildRequires: cmake(Qt5Network)
 BuildRequires: cmake(Qt5X11Extras)
 BuildRequires: cmake(Qt5Widgets)
+BuildRequires: pkgconfig(appstream-glib)
 BuildRequires: pkgconfig(sdl2)
 BuildRequires: pkgconfig(x11)
 BuildRequires: pkgconfig(xcb)
