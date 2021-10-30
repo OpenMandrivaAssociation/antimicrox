@@ -54,7 +54,8 @@ This application is continuation of project called AntiMicro, which was later ab
 
 %build
 %cmake  \
-        -DAPPDATA=OFF
+        -DAPPDATA=OFF \
+        -DCMAKE_BUILD_TYPE=Release
 
 %make_build
 
