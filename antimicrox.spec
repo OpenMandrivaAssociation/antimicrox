@@ -75,4 +75,4 @@ This application is continuation of project called AntiMicro, which was later ab
 %{_datadir}/mime/packages/io.github.antimicrox.%{name}.xml
 %{_iconsdir}/*/*/apps/*
 %{_mandir}/man1/antimicrox.1.*
-%{_udevrulesdir}/rules.d/60-antimicrox-uinput.rules
+%{_prefix}/lib/udev/rules.d/60-antimicrox-uinput.rules
