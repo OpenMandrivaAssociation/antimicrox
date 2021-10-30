@@ -50,7 +50,7 @@ This application is continuation of project called AntiMicro, which was later ab
 
 %build
 %cmake  \
-        -DAPPDATA=ON
+        -DAPPDATA=OFF
 
 %make_build
 
