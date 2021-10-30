@@ -24,6 +24,8 @@ BuildRequires: cmake(Qt5X11Extras)
 BuildRequires: cmake(Qt5Widgets)
 BuildRequires: pkgconfig(appstream-glib)
 BuildRequires: pkgconfig(sdl2)
+BuildRequires: pkgconfig(systemd)
+BuildRequires: pkgconfig(udev)
 BuildRequires: pkgconfig(x11)
 BuildRequires: pkgconfig(xcb)
 BuildRequires: pkgconfig(xtst)
@@ -31,6 +33,8 @@ BuildRequires: pkgconfig(xtst)
 %if %build_doc
 BuildRequires: doxygen
 %endif
+
+Requires:       systemd
 
 %description
 AntiMicroX is a graphical program used to map gamepad keys to keyboard, mouse, scripts and macros. 
@@ -70,5 +74,5 @@ This application is continuation of project called AntiMicro, which was later ab
 #{_datadir}/metainfo/io.github.antimicrox.%{name}.appdata.xml
 %{_datadir}/mime/packages/io.github.antimicrox.%{name}.xml
 %{_iconsdir}/*/*/apps/*
-#{_mandir}/man?/%{name}.?%{?ext_man}
-#{_udevrulesdir}/60-%{name}-uinput.rules
+%{_mandir}/man1/antimicrox.1.*
+%{_udevrulesdir}/rules.d/60-antimicrox-uinput.rules
