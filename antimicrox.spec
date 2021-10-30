@@ -67,8 +67,8 @@ This application is continuation of project called AntiMicro, which was later ab
 %{_bindir}/%{name}
 %{_datadir}/%{name}
 %{_datadir}/applications/io.github.antimicrox.%{name}.desktop
-%{_datadir}/metainfo/io.github.antimicrox.%{name}.appdata.xml
+#{_datadir}/metainfo/io.github.antimicrox.%{name}.appdata.xml
 %{_datadir}/mime/packages/io.github.antimicrox.%{name}.xml
 %{_iconsdir}/*/*/apps/*
-%{_mandir}/man?/%{name}.?%{?ext_man}
-%{_udevrulesdir}/60-%{name}-uinput.rules
+#{_mandir}/man?/%{name}.?%{?ext_man}
+#{_udevrulesdir}/60-%{name}-uinput.rules
