@@ -70,7 +70,9 @@ This application is continuation of project called AntiMicro, which was later ab
 %doc CHANGELOG.md README.md ProfileTips.md
 %exclude %{_datadir}/%{name}/CHANGELOG.md
 %{_bindir}/%{name}
-#{_datadir}/%{name}
+%{_datadir}/antimicrox/LICENSE_SDL_GameControllerDB
+%{_datadir}/antimicrox/gamecontrollerdb.txt
+%{_datadir}/antimicrox/translations/antimicrox.qm
 %{_datadir}/applications/io.github.antimicrox.%{name}.desktop
 #{_datadir}/metainfo/io.github.antimicrox.%{name}.appdata.xml
 %{_datadir}/mime/packages/io.github.antimicrox.%{name}.xml
