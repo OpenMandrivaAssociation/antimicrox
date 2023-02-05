@@ -4,13 +4,13 @@
 %define build_doc 0
 
 Name:           antimicrox
-Version:        3.3.2
+Version:        3.3.3
 Release:        1
 Summary:        Graphical program used to map keyboard keys and mouse controls to a game-pad
 License:        GPL-3.0
 Group:          Hardware/Joystick
 URL:            https://github.com/AntiMicroX/antimicroX
-Source0:        https://github.com/AntiMicroX/antimicrox/archive/refs/tags/%{version}/%{name}-%{version}.tar.gz
+Source0:        https://github.com/AntiMicroX/antimicrox/archive/refs/tags/3-3-3/%{name}-3-3-3.tar.gz
 
 BuildRequires: appstream-util
 BuildRequires: cmake
@@ -50,7 +50,7 @@ It allows mapping of gamepads/joystick buttons to:
 This application is continuation of project called AntiMicro, which was later abandoned and revived by Jagoda Górska (juliagoda).
 
 %prep
-%autosetup -p1
+%autosetup -n %{name}-3-3-3 -p1
 
 %build
 %cmake  \
