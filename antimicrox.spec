@@ -13,6 +13,7 @@ URL:            https://github.com/AntiMicroX/antimicroX
 Source0:        https://github.com/AntiMicroX/antimicrox/archive/refs/tags/%{version}/%{name}-%{version}.tar.gz
 
 BuildRequires: appstream-util
+BuildRequires: make
 BuildRequires: cmake
 BuildRequires: cmake(ECM)
 BuildRequires: cmake(Qt5Concurrent)
