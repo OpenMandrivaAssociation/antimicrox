@@ -16,13 +16,12 @@ BuildRequires: appstream-util
 BuildRequires: make
 BuildRequires: cmake
 BuildRequires: cmake(ECM)
-BuildRequires: cmake(Qt5Concurrent)
-BuildRequires: cmake(Qt5Core)
-BuildRequires: cmake(Qt5Gui)
-BuildRequires: cmake(Qt5LinguistTools)
-BuildRequires: cmake(Qt5Network)
-BuildRequires: cmake(Qt5X11Extras)
-BuildRequires: cmake(Qt5Widgets)
+BuildRequires: cmake(Qt6Concurrent)
+BuildRequires: cmake(Qt6Core)
+BuildRequires: cmake(Qt6Gui)
+BuildRequires: cmake(Qt6LinguistTools)
+BuildRequires: cmake(Qt6Network)
+BuildRequires: cmake(Qt6Widgets)
 BuildRequires: pkgconfig(appstream-glib)
 BuildRequires: pkgconfig(sdl2)
 BuildRequires: pkgconfig(systemd)
@@ -75,7 +74,6 @@ This application is continuation of project called AntiMicro, which was later ab
 %{_datadir}/antimicrox/gamecontrollerdb.txt
 %{_datadir}/antimicrox/translations/antimicrox.qm
 %{_datadir}/applications/io.github.antimicrox.%{name}.desktop
-#{_datadir}/metainfo/io.github.antimicrox.%{name}.appdata.xml
 %{_datadir}/mime/packages/io.github.antimicrox.%{name}.xml
 %{_iconsdir}/*/*/apps/*
 %{_mandir}/man1/antimicrox.1.*
